@@ -8,7 +8,7 @@ This task will cover the following concepts:
 - String Methods: toUpperCase, toLowerCase, trim, includes
 - Object Methods: keys, values, entries, hasOwnProperty
 
-## 🎯 Sample Interaction & Output
+## 🎯 Sample Interaction & Output:
 
 ### User clicks "Add New User" button
 
