@@ -1,4 +1,5 @@
-# 🛠 Task: User Profile Manager (Web-based Interactive Task)
+# 🛠 Task: User Profile Manager 
+> (Web-based Interactive Task)
 
 This task will cover the following concepts:
 - DOM & its Methods: Manipulating HTML elements (getElementById, querySelector, innerText, setAttribute)
@@ -11,17 +12,30 @@ This task will cover the following concepts:
 
 ### User clicks "Add New User" button
 
-(Prompt appears) Enter user name: John  
-(Alert appears) User added successfully!  
+(Prompt appears) 
+```
+Enter user name: John  
+```
+(Alert appears) 
+```
+User added successfully!  
+```
 (User list updates)  
+```
 1. JOHN (john@example.com)
+```
 
 ### User clicks "Show Users" button
 
-(User list in console)  
+(User list in console) 
+``` 
 Users: [ { id: 1, name: 'JOHN', email: 'john@example.com' } ]
+```
 
 ### User clicks "Clear Users" button  
 
-(Alert appears) All users cleared!  
+(Alert appears) 
+```
+All users cleared!  
+```
 (User list is now empty)
