@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Profile Manager</h1>
+        
+        <div class="controls">
+            <button class="btn-primary" id="addUserBtn">Add New User</button>
+            <button class="btn-info" id="showUsersBtn">Show Users</button>
+            <button class="btn-secondary" id="clearUsersBtn">Clear Users</button>
+        </div>
+        
+        <div class="user-list">
+            <h2>User List</h2>
+            <div id="usersContainer">
+                <div class="empty-state">
+                    <p>No users added. Click "Add New User" to get started.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

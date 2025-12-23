@@ -1,0 +1,286 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f0f0f0;
+            padding: 200px;
+            transition: padding 0.3s ease;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 28px;
+        }
+        
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            flex: 1;
+            min-width: 150px;
+            transition: transform 0.2s, opacity 0.2s;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+        
+        button:active {
+            transform: translateY(0);
+        }
+        
+        .btn-primary {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        .btn-secondary {
+            background-color: #f44336;
+            color: white;
+        }
+        
+        .btn-info {
+            background-color: #2196F3;
+            color: white;
+        }
+        
+        .user-list {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 15px;
+            min-height: 200px;
+        }
+        
+        .user-list h2 {
+            margin-bottom: 15px;
+            color: #333;
+            font-size: 22px;
+        }
+        
+        .user-card {
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.2s;
+        }
+        
+        .user-card:hover {
+            background-color: #efefef;
+        }
+        
+        .user-info h3 {
+            color: #333;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+        
+        .user-info p {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .user-id {
+            background-color: #2196F3;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: 30px;
+            color: #888;
+        }
+
+        /* Tablet screens (768px - 1024px) */
+        @media screen and (max-width: 1024px) {
+            body {
+                padding: 100px 40px;
+            }
+            
+            .container {
+                max-width: 90%;
+            }
+            
+            h1 {
+                font-size: 26px;
+            }
+            
+            .user-list h2 {
+                font-size: 20px;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            body {
+                padding: 40px 20px;
+            }
+            
+            .container {
+                max-width: 100%;
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+            
+            .controls {
+                gap: 8px;
+            }
+            
+            button {
+                padding: 12px 15px;
+                font-size: 14px;
+                min-width: 120px;
+            }
+            
+            .user-list {
+                padding: 12px;
+            }
+            
+            .user-list h2 {
+                font-size: 18px;
+                margin-bottom: 12px;
+            }
+            
+            .user-card {
+                padding: 12px;
+            }
+            
+            .user-info h3 {
+                font-size: 16px;
+            }
+            
+            .user-info p {
+                font-size: 13px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            body {
+                padding: 20px 15px;
+            }
+            
+            .container {
+                padding: 12px;
+                border-radius: 3px;
+            }
+            
+            h1 {
+                font-size: 20px;
+                margin-bottom: 12px;
+            }
+            
+            .controls {
+                flex-direction: column;
+                gap: 8px;
+            }
+            
+            button {
+                width: 100%;
+                min-width: auto;
+                padding: 12px;
+                font-size: 14px;
+            }
+            
+            .user-list {
+                padding: 10px;
+                min-height: 150px;
+            }
+            
+            .user-list h2 {
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+            
+            .user-card {
+                padding: 10px;
+                flex-direction: row;
+            }
+            
+            .user-info h3 {
+                font-size: 15px;
+                margin-bottom: 4px;
+            }
+            
+            .user-info p {
+                font-size: 12px;
+                word-break: break-all;
+            }
+            
+            .user-id {
+                width: 28px;
+                height: 28px;
+                font-size: 13px;
+                flex-shrink: 0;
+            }
+            
+            .empty-state {
+                padding: 20px 10px;
+                font-size: 14px;
+            }
+        }
+
+        @media screen and (max-width: 320px) {
+            body {
+                padding: 100px 10px;
+            }
+            
+            h1 {
+                font-size: 18px;
+            }
+            
+            .user-list h2 {
+                font-size: 15px;
+            }
+            
+            .user-info h3 {
+                font-size: 14px;
+            }
+            
+            .user-info p {
+                font-size: 11px;
+            }
+            
+            button {
+                padding: 10px;
+                font-size: 13px;
+            }
+        }
